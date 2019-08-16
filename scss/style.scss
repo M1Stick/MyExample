@@ -1,0 +1,35 @@
+@import '_variables.scss';
+@import '_utilities.scss';
+@import '_normalize.scss';
+@import '_grid.scss';
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+
+* {
+  font-family: $font-family-arial;
+  color: $light-gray;
+  line-height: $font-height;
+}
+
+header {
+    width: 100%;
+    height: 30px;
+    background-color: black;
+}
+.header-content p{
+  color: gray;
+  font-family: $font-family-arial;
+  font-size: 11px;
+  font-weight: $font-weight-regular;
+  text-transform: uppercase;
+  margin-bottom: 11px;
+}

@@ -1,0 +1,69 @@
+// grid
+$container-width: 1140px;
+$gutter: 30px;
+$num-cols: 12;
+// end grid
+// media
+$breakpoint-small: 33.75em; // 540px
+$breakpoint-medium: 45em; // 720px
+$breakpoint-large: 60em; // 960px
+$breakpoint-extra: 80em; // 1280px
+// end media
+// fonts
+$font-family-arial: 'Arial', sans-serif;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-heavy: 700;
+$font-height: 1.5;
+// end fonts
+// colors
+$bg-color-elements: #fd926d;
+$light-gray:#414141;
+// end colors 
+// MIXIN'S
+@mixin small {
+    @media screen and (min-width: $breakpoint-small) {
+      @content;
+    }
+  }
+  
+  @mixin medium {
+    @media screen and (min-width: $breakpoint-medium) {
+      @content;
+    }
+  }
+  
+  @mixin large {
+    @media screen and (min-width: $breakpoint-large) {
+      @content;
+    }
+  }
+  
+  @mixin extra {
+    @media screen and (min-width: $breakpoint-extra) {
+      @content;
+    }
+  }
+  
+  
+  @mixin placeholder {
+    ::-webkit-input-placeholder {
+      @content;
+    }
+    ::-moz-placeholder {
+      @content;
+    }
+    :-ms-input-placeholder {
+      @content;
+    }
+    :-moz-placeholder {
+      @content;
+    }
+  }
+  
+  @mixin font-size($size) {
+    font-size: $size + px;
+    font-size: ($size / 16) + rem;
+  }
+
+// END MIXIN'S
